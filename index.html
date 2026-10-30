@@ -1,127 +1,187 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="en" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustapha Chabni | AI & E-commerce Automation Strategist</title>
+    <title>Mustapha Chabni | End-to-End E-Commerce & AI Systems Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            950: '#030712',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .glow-card {
+            box-shadow: 0 0 40px -15px rgba(14, 165, 233, 0.15);
+        }
+    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Mustapha Chabni<span class="text-cyan-400">.site</span>
+    <!-- Header / Nav -->
+    <header class="fixed top-0 left-0 right-0 z-50 px-4 py-3">
+        <nav class="max-w-5xl mx-auto glass border border-slate-800/80 rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between shadow-2xl">
+            <a href="#" class="text-sm sm:text-base font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-400 animate-pulse"></span>
+                <span>Mustapha<span class="text-brand-400">.Chabni</span></span>
             </a>
-            <div class="flex items-center gap-6 text-sm font-medium text-slate-400">
-                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
-                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projets</a>
-                <a href="https://instagram.com/rc.mustaphaa" target="_blank" class="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold rounded-lg transition-all shadow-lg shadow-cyan-500/20">
-                    Contact
-                </a>
+            
+            <div class="hidden md:flex items-center gap-6 text-xs font-semibold tracking-wider text-slate-400 uppercase">
+                <a href="#ecosystem" class="hover:text-brand-400 transition-colors">Ecosystem</a>
+                <a href="#ventures" class="hover:text-brand-400 transition-colors">Ventures</a>
+                <a href="#architecture" class="hover:text-brand-400 transition-colors">Architecture</a>
             </div>
-        </div>
-    </nav>
+
+            <a href="https://instagram.com/rc.mustaphaa" target="_blank" 
+               class="px-3.5 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-brand-500 to-blue-600 hover:from-brand-400 hover:to-blue-500 text-slate-950 font-bold text-xs rounded-xl transition-all shadow-lg shadow-brand-500/20">
+                Connect
+            </a>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="pt-36 pb-20 px-6 max-w-6xl mx-auto">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-semibold mb-6">
-            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-            CEO & Co-founder @ RC Agents
+    <section class="pt-32 pb-16 px-5 max-w-5xl mx-auto text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-brand-400 text-[11px] font-semibold mb-6 glow-card">
+            <i class="fa-solid fa-layer-group text-xs"></i>
+            <span>Licensed Micro-Importateur & Tech Entrepreneur</span>
         </div>
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-            Architecting <span class="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">AI Systems & E-Commerce</span> Solutions.
+        
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white leading-tight mb-6">
+            Architecting <span class="bg-gradient-to-r from-brand-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">End-to-End</span> <br class="hidden sm:inline"/>
+            E-Commerce & AI Systems.
         </h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">
-            Spécialiste en أتمتة المتاجر الإلكترونية، تطوير حلول الذكاء الاصطناعي (AI Agents)، وتكامل شبكات الشحن والـ CRM.
+        
+        <p class="text-xs sm:text-sm md:text-base text-slate-400 max-w-2xl leading-relaxed mb-8">
+            Bridging international supply chain logistics (Micro-Importation), omnichannel retail execution (Shopify POS & 58 Wilayas fulfillment), and autonomous AI agent infrastructure.
         </p>
-        <div class="flex flex-wrap gap-4">
-            <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold rounded-xl shadow-lg shadow-cyan-500/25 transition-all">
-                Voir les projets <i class="fa-solid fa-arrow-right ml-2"></i>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+            <a href="#ventures" class="px-6 py-3 bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-xs sm:text-sm rounded-xl text-center shadow-lg shadow-brand-500/20 transition-all">
+                View Live Ventures <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
             </a>
-            <a href="https://rcagents.space" target="_blank" class="px-6 py-3 bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold rounded-xl transition-all">
-                Visiter RC Agents
+            <a href="https://rcagents.space" target="_blank" class="px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 font-semibold text-xs sm:text-sm rounded-xl text-center transition-all">
+                RC Agents SaaS Platform
             </a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-slate-900/50 border-y border-slate-800/80 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-white">Expertise & Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-500/50 transition-all">
-                    <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-400 text-xl mb-4">
-                        <i class="fa-solid fa-robot"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">AI Agents & CRM SaaS</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Développement d'agents IA conversationnels pour la gestion automatisée des commandes WhatsApp, Messenger et Instagram Direct.
-                    </p>
+    <!-- End-to-End Value Chain Section -->
+    <section id="ecosystem" class="py-16 px-5 max-w-5xl mx-auto border-t border-slate-900">
+        <div class="mb-12">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-brand-400">The Full Pipeline</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">End-to-End Value Chain</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- Stage 1 -->
+            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl relative overflow-hidden group hover:border-brand-500/40 transition-all">
+                <div class="text-3xl font-black text-slate-800 group-hover:text-brand-500/20 transition-colors absolute top-4 right-4">01</div>
+                <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-5">
+                    <i class="fa-solid fa-boxes-packing"></i>
                 </div>
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-500/50 transition-all">
-                    <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-400 text-xl mb-4">
-                        <i class="fa-solid fa-diagram-project"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Automatisations & Webhooks</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Flux de travail n8n, intégration Shopify POS, ZR Express, et gestion automatique des stocks et factures.
-                    </p>
+                <h3 class="text-base font-bold text-white mb-2">Supply & Micro-Importation</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Direct product sourcing and micro-importation logistics, establishing robust stock management and legal supply chain foundations.
+                </p>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl relative overflow-hidden group hover:border-brand-500/40 transition-all">
+                <div class="text-3xl font-black text-slate-800 group-hover:text-brand-500/20 transition-colors absolute top-4 right-4">02</div>
+                <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-5">
+                    <i class="fa-solid fa-store"></i>
                 </div>
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-cyan-500/50 transition-all">
-                    <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-400 text-xl mb-4">
-                        <i class="fa-solid fa-truck-ramp-box"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">E-Commerce Architecture</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Gestion stratégique de marque E-commerce, logistique d'importation et synchronisation Omnicanal (Physique + Web).
-                    </p>
+                <h3 class="text-base font-bold text-white mb-2">Omnichannel Execution</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Synchronizing physical retail POS with Shopify storefronts, integrated with ZR Express webhooks for nationwide 58-wilaya fulfillment.
+                </p>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl relative overflow-hidden group hover:border-brand-500/40 transition-all">
+                <div class="text-3xl font-black text-slate-800 group-hover:text-brand-500/20 transition-colors absolute top-4 right-4">03</div>
+                <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-5">
+                    <i class="fa-solid fa-robot"></i>
                 </div>
+                <h3 class="text-base font-bold text-white mb-2">AI Systems & SaaS</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Deploying conversational AI agents and n8n workflow pipelines to automate customer acquisition, support, and CRM operations.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-bold mb-12 text-white">Missions & Platforms</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-slate-700 transition-all">
-                <div class="text-xs text-cyan-400 font-mono mb-2">SAAS PLATFORM</div>
-                <h3 class="text-2xl font-bold text-white mb-3">RC Agents</h3>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Plateforme SaaS automatisée permettant aux e-commerçants d'automatiser le support et la prise de commande par IA.
+    <!-- Ventures Section -->
+    <section id="ventures" class="py-16 px-5 max-w-5xl mx-auto border-t border-slate-900">
+        <div class="mb-12">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-brand-400">Live Operating Entities</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Core Ventures</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Venture 1 -->
+            <div class="p-6 sm:p-7 bg-slate-900/80 border border-slate-800 rounded-2xl relative overflow-hidden group hover:border-slate-700 transition-all">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-2.5 py-1 rounded-md bg-brand-500/10 border border-brand-500/30 text-brand-400 text-[10px] font-bold tracking-wider uppercase">B2B SaaS Engine</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-600 group-hover:text-brand-400 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">RC Agents</h3>
+                <p class="text-xs text-slate-400 leading-relaxed mb-6">
+                    Proprietary AI-driven SaaS CRM enabling e-commerce merchants to automate customer communication, order processing, and delivery webhooks seamlessly.
                 </p>
-                <a href="https://rcagents.space" target="_blank" class="inline-flex items-center text-cyan-400 text-sm font-semibold hover:underline">
-                    Visiter rcagents.space <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                <a href="https://rcagents.space" target="_blank" class="inline-flex items-center text-xs font-bold text-brand-400 hover:underline">
+                    Explore Platform <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
                 </a>
             </div>
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-slate-700 transition-all">
-                <div class="text-xs text-cyan-400 font-mono mb-2">E-COMMERCE BRAND</div>
-                <h3 class="text-2xl font-bold text-white mb-3">Royal Chaussures DZ</h3>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Marque nationale e-commerce et boutique physique avec intégration Shopify POS et livraison sur 58 wilayas.
+
+            <!-- Venture 2 -->
+            <div class="p-6 sm:p-7 bg-slate-900/80 border border-slate-800 rounded-2xl relative overflow-hidden group hover:border-slate-700 transition-all">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-2.5 py-1 rounded-md bg-purple-500/10 border border-purple-500/30 text-purple-400 text-[10px] font-bold tracking-wider uppercase">National Retail & Brand</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-600 group-hover:text-purple-400 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Royal Chaussures DZ</h3>
+                <p class="text-xs text-slate-400 leading-relaxed mb-6">
+                    Physical footwear retail store in Tlemcen integrated with Shopify POS and direct nationwide e-commerce logistics across all 58 wilayas.
                 </p>
-                <a href="https://instagram.com/royal_chaussures_tlemcen_" target="_blank" class="inline-flex items-center text-cyan-400 text-sm font-semibold hover:underline">
-                    Voir la boutique <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                <a href="https://instagram.com/royal_chaussures_tlemcen_" target="_blank" class="inline-flex items-center text-xs font-bold text-purple-400 hover:underline">
+                    Visit Store Profile <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-slate-800 px-6 text-center text-slate-500 text-sm">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer class="py-10 border-t border-slate-900 px-5 text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
             <div>
-                <p class="font-semibold text-white">Mustapha Chabni</p>
-                <p class="text-xs text-slate-400">Consultant E-Commerce & Systems Automation</p>
+                <p class="text-slate-300 font-semibold">Mustapha Chabni</p>
+                <p class="text-[11px] text-slate-500">End-to-End E-Commerce & Systems Architect</p>
             </div>
-            <div class="flex gap-6 text-lg">
-                <a href="https://instagram.com/rc.mustaphaa" target="_blank" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/040916073mustapha" target="_blank" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+            <div class="flex gap-4 text-base">
+                <a href="https://instagram.com/rc.mustaphaa" target="_blank" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/040916073mustapha" target="_blank" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-github"></i></a>
             </div>
-            <p>© 2026 Mustapha Chabni. Tous droits réservés.</p>
+            <p>© 2026 Mustapha Chabni. All rights reserved.</p>
         </div>
     </footer>
 
